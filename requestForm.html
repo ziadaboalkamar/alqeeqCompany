@@ -1,24 +1,16 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>اخر الاخبار</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Place favicon.png in the root directory -->
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-    <!-- Font Icons css -->
-    <link rel="stylesheet" href="css/font-icons.css">
-    <!-- plugins css -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title> Alqeeq | Home </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/blogstyle.css">
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&amp;display=swap"
@@ -26,18 +18,73 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="vendor/aos/aos.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;900&display=swap" rel="stylesheet">   <!-- Demo styles -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-</head>
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
 
-<body dir="rtl">
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
 
-    <!-- Add your site or application content here -->
-           <!--start nav bar  -->
-           <section class="nav " dir="ltr"> 
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+        <!--start nav bar  -->
+        <section class="nav "> 
 
             <div class="site-mobile-menu site-navbar-target">
               <div class="site-mobile-menu-header">
@@ -427,269 +474,94 @@
         
             
           </section>
-      
-          <!-- end nav bar -->
-<!-- Body main wrapper start -->
-<div class="body-wrapper text-left section_padding">
-
-
-
-
-    <!-- BLOG AREA START -->
-    <div class="ltn__blog-area mb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="ltn__blog-list-wrap">
-                        <!-- Blog Item -->
-                        <div class="ltn__blog-item ltn__blog-item-5">
-                            <div class="ltn__blog-img">
-                                <a href="blog-details.html"><img src="images/blog/4.jpg" alt="Image"></a>
+  
+      <!-- end nav bar -->
+      <!-- Section Service Request -->
+      <section class="service_request section_padding">
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center title">
+                    <h2>Service Request</h2>
+                    <span class="line_span"></span>
+                  <p>Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met 
+                    humoured sir breeding her. Six curiosity day assurance bed necessary.</p>
+                  </div>
+                  <div class="col-lg-12 pt-5">
+                    <form class="service_request_form">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Full Name</label>
+                            <input type="text" placeholder="Enter full name" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email Address</label>
+                             <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Phone Number</label>
+                              <input type="text" placeholder="Enter full name" class="form-control" id="inputEmail4">
                             </div>
-                            <div class="ltn__blog-brief">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-category">
-                                            <a href="blog.html#">التداول</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="ltn__blog-title"><a href="blog-details.html">كيف تخلق منصة Binance P2P بيئة تداول آمنة بأقل رسوم تداول في السوق</a></h3>
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li>
-                                            <a href="blog.html#"><i class="far fa-eye"></i>232 مشاهده</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog.html#"><i class="far fa-comments"></i>35 تعليق</a>
-                                        </li>
-                                        <li class="ltn__blog-date">
-                                            <i class="far fa-calendar-alt"></i>June 22, 2020
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث</p>
-                                <div class="ltn__blog-meta-btn">
-                                    <div class="ltn__blog-meta">
-                                        <ul>
-                                            <li class="ltn__blog-author">
-                                                <a href="blog.html#"><img src="images/blog/author.jpg" alt="#">بقلم: إيثان</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="ltn__blog-btn">
-                                        <a href="blog-details.html"><i class="fas fa-arrow-right"></i>قراءة المزيد</a>
-                                    </div>
-                                </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Company Name <span>(optional)</span></label>
+                               <input type="email" class="form-control" id="inputEmail4">
                             </div>
-                        </div>
-                        <!-- Blog Item (Video) -->
-                        <div class="ltn__blog-item ltn__blog-item-5 ltn__blog-item-video">
-                            <div class="ltn__video-img">
-                                <img src="images/blog/32.jpg" alt="video popup bg image">
-                                <a class="ltn__video-icon-2 ltn__secondary-bg ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0"  data-rel="lightcase:myCollection">
-                                    <i class="fa fa-play"></i>
-                                </a>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Services</label>
+                              <select class="form-control" multiple="multiple">
+                                <option">orange</option>
+                                <option>white</option>
+                                <option>purple</option>
+                              </select>
                             </div>
-                            <div class="ltn__blog-brief">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-category">
-                                            <a href="blog.html#">التداول</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="ltn__blog-title"><a href="blog-details.html">كيف تخلق منصة Binance P2P بيئة تداول آمنة بأقل رسوم تداول في السوق</a></h3>
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li>
-                                            <a href="blog.html#"><i class="far fa-eye"></i>232 مشاهده</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog.html#"><i class="far fa-comments"></i>35 تعليق</a>
-                                        </li>
-                                        <li class="ltn__blog-date">
-                                            <i class="far fa-calendar-alt"></i>June 22, 2020
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث</p>
-                                <div class="ltn__blog-meta-btn">
-                                    <div class="ltn__blog-meta">
-                                        <ul>
-                                            <li class="ltn__blog-author">
-                                                <a href="blog.html#"><img src="images/blog/author.jpg" alt="#">بقلم: إيثان</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="ltn__blog-btn">
-                                        <a href="blog-details.html"><i class="fas fa-arrow-right"></i>قراءة المزيد</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!--  -->
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="ltn__pagination-area text-center">
-                                <div class="ltn__pagination">
-                                    <ul>
-                                        <li><a href="blog.html#"><i class="fas fa-angle-double-left"></i></a></li>
-                                        <li><a href="blog.html#">1</a></li>
-                                        <li class="active"><a href="blog.html#">2</a></li>
-                                        <li><a href="blog.html#">3</a></li>
-                                        <li><a href="blog.html#">...</a></li>
-                                        <li><a href="blog.html#">10</a></li>
-                                        <li><a href="blog.html#"><i class="fas fa-angle-double-right"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <aside class="sidebar-area blog-sidebar ltn__right-sidebar">
-                     
-                        <!-- Search Widget -->
-                        <div class="widget ltn__search-widget">
-                            <h4 class="ltn__widget-title ltn__widget-title-border-2">بحث عن مدونه</h4>
-                            <form action="#">
-                                <input type="text" name="search" placeholder="Search your keyword...">
-                                <button type="submit"><i class="fas fa-search"></i></button>
-                            </form>
-                        </div>
-                        <!-- Form Widget -->
-                        <div class="widget ltn__form-widget">
-                            <h4 class="ltn__widget-title ltn__widget-title-border-2">كتابة رسالة للكاتب</h4>
-                            <form action="#">
-                                <input type="text" name="yourname" placeholder="Your Name*">
-                                <input type="text" name="youremail" placeholder="Your e-Mail*">
-                                <textarea name="yourmessage" placeholder="Write Message..."></textarea>
-                                <button type="submit" class="btn theme-btn-1">ارسال </button>
-                            </form>
-                        </div>
-                        <!-- Top Rated Product Widget -->
-                      
-                        <!-- Menu Widget (Category) -->
-                  
-                        <!-- Popular Product Widget -->
-                  
-                        <!-- Popular Post Widget -->
-                        <div class="widget ltn__popular-post-widget">
-                            <h4 class="ltn__widget-title ltn__widget-title-border-2">اخر المدونات</h4>
-                            <ul>
-                                <li>
-                                    <div class="popular-post-widget-item clearfix">
-                                        <div class="popular-post-widget-img">
-                                            <a href="blog-details.html"><img src="images/team/5.jpg" alt="#"></a>
-                                        </div>
-                                        <div class="popular-post-widget-brief">
-                                            <h6><a href="blog-details.html">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث</a></h6>
-                                            <div class="ltn__blog-meta">
-                                                <ul>
-                                                    <li class="ltn__blog-date">
-                                                        <a href="blog.html#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="popular-post-widget-item clearfix">
-                                        <div class="popular-post-widget-img">
-                                            <a href="blog-details.html"><img src="images/team/6.jpg" alt="#"></a>
-                                        </div>
-                                        <div class="popular-post-widget-brief">
-                                            <h6><a href="blog-details.html">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث</a></h6>
+                            
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Sub Category</label>
+                              <select class="form-control" multiple="multiple">
+                                <option>orange</option>
+                                <option>white</option>
+                                <option>purple</option>
+                              </select>
+                            </div>                       
+                             </div>
+                             <div class="form-row">
+                              
+                                <div class="form-group col-md-12">
+                                    <label for="inputZip">Selected Services</label>
+                                    <div class="services_selected gray_body pt-3">
+                                        <div class="container">
+                                            <ul>
+                                                <li>Mobile Design</li>
+                                                <li>Mobile Design</li>
 
-                                            <div class="ltn__blog-meta">
-                                                <ul>
-                                                    <li class="ltn__blog-date">
-                                                        <a href="blog.html#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            </ul>
                                         </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="popular-post-widget-item clearfix">
-                                        <div class="popular-post-widget-img">
-                                            <a href="blog-details.html"><img src="images/team/7.jpg" alt="#"></a>
-                                        </div>
-                                        <div class="popular-post-widget-brief">
-                                            <h6><a href="blog-details.html">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث</a></h6>
 
-                                            <div class="ltn__blog-meta">
-                                                <ul>
-                                                    <li class="ltn__blog-date">
-                                                        <a href="blog.html#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="popular-post-widget-item clearfix">
-                                        <div class="popular-post-widget-img">
-                                            <a href="blog-details.html"><img src="images/team/8.jpg" alt="#"></a>
-                                        </div>
-                                        <div class="popular-post-widget-brief">
-                                            <h6><a href="blog-details.html">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث</a></h6>
+                                </div>                       
+                                 </div>
 
-                                            <div class="ltn__blog-meta">
-                                                <ul>
-                                                    <li class="ltn__blog-date">
-                                                        <a href="blog.html#"><i class="far fa-calendar-alt"></i>June 22, 2020</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                      
-                        <!-- Social Media Widget -->
-                        <div class="widget ltn__social-media-widget">
-                            <h4 class="ltn__widget-title ltn__widget-title-border-2">Follow us</h4>
-                            <div class="ltn__social-media-2">
-                                <ul>
-                                    <li><a href="blog.html#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="blog.html#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="blog.html#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="blog.html#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Tagcloud Widget -->
-                 
-                        <!-- Banner Widget -->
-                        <div class="widget ltn__banner-widget d-none">
-                            <a href="shop.html"><img src="images/banner/2.jpg" alt="#"></a>
-                        </div>
-                        <!-- Instagram Widget -->
-                        <div class="widget ltn__instagram-widget d-none">
-                            <h4 class="ltn__widget-title ltn__widget-title-border">Instagram Feeds</h4>
-                            <div class="ltn__instafeed ltn__instafeed-grid insta-grid-gutter"></div>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- BLOG AREA END -->
+                                 <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Note</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                  </div>
 
+                          
+                                  <div class="form-group mt-5 text-right">
+                                    <button type="submit" class="btn btn-primary">Request</button>
 
-</div>
-<!-- Body main wrapper end -->
-      <!-- start footer -->
-      <footer class="pt-3 pb-3 footer gray_body" dir="ltr">
+                                  </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- end section request -->
+
+      <footer class="pt-3 pb-3 footer gray_body">
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
@@ -832,16 +704,96 @@ itself.
         </div>
       </footer>
       <!-- end footer -->
-    <!-- preloader area end -->
 
-    <!-- All JS Plugins -->
+      
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="vendor/aos/aos.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+    <script>
+      
+            
+      $('.client_what_are_saying_carousal').owlCarousel({
+        loop: true,
+              margin: 10,
+              items: 3,
+              dots: false,
+              smartSpeed: 1200,
+              autoHeight: false,
+              autoplay:true,
+              autoplayTimeout:3000,
+              autoplayHoverPause:true,
+              responsiveClass:true,
+              navText: ["<div class='prev_slider'><div/>", "<div class='next_slider'><div/>"],
+
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true,
+              },
+              600:{
+                  items:1,
+                  nav:true,
+              },
+              1000:{
+                  items:1,
+                  nav:true,
+              }
+          }
+      })
+      
+            
+      $('.pricing_tabel_carousal').owlCarousel({
+        loop: true,
+              margin: 10,
+              items: 3,
+              dots: false,
+              smartSpeed: 1200,
+              autoHeight: false,
+              autoplay:true,
+              autoplayTimeout:3000,
+              autoplayHoverPause:true,
+              responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  // nav:true,
+              },
+              600:{
+                  items:2,
+                  // nav:true,
+              },
+              1000:{
+                  items:3,
+                  // nav:true,
+              }
+          }
+      })
+          </script>
+          <script>
+              $('select').select2({
+  createTag: function (params) {
+    var term = $.trim(params.term);
+
+    if (term === '') {
+      return null;
+    }
+
+    return {
+      id: term,
+      text: term,
+      newTag: true // add additional parameters
+    }
+  }
+});
+          </script>
+  </body>
 </html>
-    

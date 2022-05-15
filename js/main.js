@@ -191,4 +191,4 @@ lightbox.addEventListener("click" , function(event) {
     }
     
 
-})
+});

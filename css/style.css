@@ -219,15 +219,19 @@ a {
     font-weight: 200;
     line-height: 0;
     top: -7px;
-    position: relative; }
+    position: relative;
+  text-align: right; }
     .site-navbar .site-logo a {
       font-weight: 200;
       color: #fff;
       font-size: 20px;
       font-weight: bold;
       text-transform: uppercase; }
-      /* .site-navbar .site-logo a img {
-  margin-top: 30px;} */
+      .site-navbar .site-logo a svg {
+        width: 200px;
+        margin-top: 14px;
+        margin-bottom: 7px;
+        vertical-align: middle;}
   .site-navbar .site-navigation .site-menu {
     padding-right: 0px;
     margin-bottom: 0; }
@@ -465,6 +469,12 @@ a {
       position: relative;
       float: left;
       width: 100%; }
+      .sticky-wrapper.is-sticky .site-navbar .site-logo a svg{
+        width: 171px;
+        margin-top: 14px;
+        margin-bottom: 7px;
+        vertical-align: middle;
+      }
       .site-mobile-menu .site-nav-wrap > li > a {
         padding-left: 20px;
         font-size: 20px; }
@@ -2216,12 +2226,15 @@ top: 70%;
   padding: 13px;
   border: none;
   border-radius: 6px;
+  font-weight: bold;
 }
 .section_padding{
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.site-navigation .dropdown{
+  margin-left: 45px;
+}
 
 /* why_choose_us */
 .why_choose_us h2{
@@ -2263,14 +2276,15 @@ line-height: unset;
   font-size: 19px;
 
 }
-.about_the_process .avatar_col span{
-  background: #02a7de85;
-  padding: 6px;
-  border-radius: 49%;
-  color: #0172B4;
+.about_the_process .avatar_col p.number_of_process{
+  width: 29px;
+  height: 29px;
+  background-color: #7bd1ee;
+  border-radius: 50%;
+  text-align: center;
+  color: blue;
   font-weight: bold;
   font-size: 16px;
-  /* font-family: 'Tajawal', sans-serif; */
 
 }
 .about_the_process .title_of_avatar{
@@ -2367,13 +2381,13 @@ line-height: unset;
   outline: none;
 }
 .portfolio .portfolio-item{
-  flex: 0 0 24%;
-  -ms-flex: 0 0 32.33%;
-  max-width: 24%;
+  flex: 0 0 29.3%;
+  -ms-flex: 0 0 29.3%;
+  max-width: 29.3%;
   margin-bottom: 30px;
   box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 17px;
+  margin-left: 19px;
 }
 .portfolio .portfolio-item.hide{
   display: none;
@@ -2635,9 +2649,9 @@ padding: 40px 0 30px;
 @media(max-width: 575px){
   .contact .contact-info-item,
   .portfolio .portfolio-item{
-      flex: 0 0 100%;
-      -ms-flex: 0 0 100%;
-      max-width: 100%;
+      flex: 0 0 100% !important;
+      -ms-flex: 0 0 100% !important;
+      max-width: 100% !important;
       margin-right: 0px;
       margin-left: 0px;
   }
@@ -2740,6 +2754,7 @@ margin-top: 45px;
   font-size: 15px;
   font-family: 'Tajawal', sans-serif;
   border-radius: 5px;
+  font-weight: bold;
 }
 .pricing-tabel .card:hover {
     position: relative;
@@ -2774,6 +2789,7 @@ margin-top: 45px;
   border: none;
   padding: 10px 40px;
   margin-top: 15px;
+  font-weight: bold;
 }
 .about_us p{
   font-size: 17px;
@@ -2872,6 +2888,7 @@ owl-prev:focus{
   padding: 10PX 54PX;
   background-color: #02A7DE;
   border: none;
+  font-weight: bold;
 }
 .contact_us button:focus{
  outline: none;
@@ -2981,3 +2998,136 @@ font-weight: bold;
   width: 73%;
 }
 /* end about page */
+/* sub category */
+.sub_services .list_of_sub_category{
+  list-style: none;
+}
+.sub_services .list_of_sub_category li{
+ display: inline-block;
+ padding-right: 10px;
+ padding-left: 10px;
+ margin-bottom: 16px;
+}
+
+.sub_services .list_of_sub_category li a{
+  font-size: 18px;
+  color: #636363;
+  font-family: 'Tajawal', sans-serif;
+}
+.sub_services .list_of_sub_category li a.active{
+  font-size: 18px;
+  color: #0172B4;
+  font-family: 'Tajawal', sans-serif;
+  border-bottom: 1px solid #0172B4;
+    padding-bottom: 9px;
+}
+.sub_services .list_of_sub_category li a:hover{
+  font-size: 18px;
+  color: #0172B4;
+  font-family: 'Tajawal', sans-serif;
+  border-bottom: 1px solid #0172B4;
+    padding-bottom: 9px;
+}
+.sub_services .sub_service_data h4{
+  font-size: 27px;
+}
+.sub_services .sub_service_data p{
+  color: #636363;
+  font-size: 17px;
+}
+.sub_services .sub_service_data:nth-child(even){
+direction: rtl;
+
+}
+.our_services.other_services_in_sub{
+background-color: unset;
+}
+/* end sub category */
+/* start services request */
+.service_request .services_selected {
+  height: 125px;
+  border-radius: 9px;
+  background-color: #fafafa;
+  border: 1px solid #eeeeee;
+}
+.service_request .services_selected ul {
+ list-style: none;
+ padding-left: 0px !important;
+}
+.service_request .services_selected ul li {
+display: inline-block;
+padding: 12px;
+background-color: white;
+color: #0172B4;
+margin-right: 5px;
+margin-left: 5px;
+border-radius: 9px;
+ }
+ .service_request .service_request_form label{
+  color: #0172B4;
+  font-size: 16px;
+ }
+ .service_request .service_request_form span{
+   font-size: 12px;
+   color: #858383;
+ }
+ .service_request .service_request_form button{
+  color: white;
+  background-color: #02A7DE;
+  padding: 10px 41px;
+ }
+ .service_request .service_request_form span{
+   width: 100% !important;
+ }
+/* end services request */
+
+.hero .content p{
+  color: white;
+  font-size: 17px;
+}
+/* media */
+@media (max-width:768px) {
+  .blog .blog-item, .portfolio .portfolio-item, .service .service-item {
+    flex: 0 0 48%;
+    -ms-flex: 0 0 48%;
+    max-width: 48%;
+}
+}
+@media (max-width:567px) {
+  .title p {
+    font-size: 17px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 19px;
+}
+span.line_span {
+  color: #02a7de;
+  background-color: #02a7de;
+  display: block;
+  width: 44%;
+  margin: 0 auto;
+  border-radius: 41px;
+}
+.card {
+margin-bottom: 15px;
+}
+.why_choose_us .col-lg-3{
+  margin-bottom: 20px;
+}
+.about_the_process .title p,
+.our_services .title p,
+.about_Alqeeq_Company .text_of_about p,
+.our_vision .text_of_about p{
+  width: 100%;
+}
+.about_the_process .text_of_avatar{
+  width: 100%;
+}
+.number_of_client .col-lg-3{
+  margin-bottom: 25px;
+}
+.about_Alqeeq_Company .svg_about_col{
+  margin-top: 50px;
+}
+}
+/* end media */

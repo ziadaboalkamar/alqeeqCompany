@@ -3221,6 +3221,7 @@ color: #0a0a0abd;
   .support-button a {
       font-size: 13px;
   }
+  
 }
 .gray_box{
 background-color: #f5f5ff;
@@ -3238,6 +3239,7 @@ direction: ltr;
   color: white;
   font-size: 17px;
 }
+
 /* media */
 @media (max-width:768px) {
   .blog .blog-item, .portfolio .portfolio-item, .service .service-item {
@@ -3281,6 +3283,10 @@ margin-bottom: 15px;
 }
 .about_Alqeeq_Company .svg_about_col{
   margin-top: 50px;
+}
+.hero{
+  background-image: unset !important ;
+  background-color: #0185c3;
 }
 }
 /* end media */

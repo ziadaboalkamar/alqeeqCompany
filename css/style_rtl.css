@@ -3353,6 +3353,10 @@
   .about_Alqeeq_Company .svg_about_col{
     margin-top: 50px;
   }
+  .hero{
+    background-image: unset !important ;
+    background-color: #0185c3;
+  }
   }
   /* end media */
   section{

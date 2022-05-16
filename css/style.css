@@ -10,6 +10,11 @@
 .gray_body{
   background-color: #F6F9FF;
 }
+.bg_body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
 [class^="icon-"], [class*=" icon-"]{
   color: white;
 }
@@ -2287,6 +2292,15 @@ line-height: unset;
   font-size: 16px;
 
 }
+.about_the_process .avatar_col:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.about_the_process .avatar_col:hover p.number_of_process{
+ color: white;
+  
+  }
 .about_the_process .title_of_avatar{
   color: #0172B4;
   font-weight: bold;
@@ -2317,14 +2331,32 @@ line-height: unset;
 }
 .our_services .card:hover{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #017aba;
 }
 .our_services .card-title{
   font-size: 26px;
   color: #000000;
 }
+.our_services .card:hover .card-title img{
+  transform: rotate(45deg);
+  transition-delay:0.4s;
+
+}
+.our_services .card:hover .card-link{
+  color: white;
+}
+.our_services .card:hover .card-link svg g path{
+  fill: white;
+}
+.our_services .card:hover .card-title{
+  color: white;
+}
 .our_services .card-text{
   font-size: 16px;
   color: #828282;
+}
+.our_services .card:hover .card-text{
+  color: white;
 }
 .our_services .card-link{
   font-size: 17px;
@@ -2338,7 +2370,9 @@ line-height: unset;
   margin: 0 auto;
   padding-top: 19px;
 }
-
+.our_services.page_of_services{
+  background-color: unset;
+}
 /* end our_services */
 /* start portfolio */
 
@@ -3081,6 +3115,125 @@ border-radius: 9px;
  }
 /* end services request */
 
+
+/* terms_and_Conditions  */
+.terms_and_Conditions .title p{
+  width: 50%;
+}
+.terms_and_Conditions .terms p{
+  width: 85%;
+  margin: 0 auto;
+font-size: 17px;
+color: #0a0a0abd;}
+.terms_and_Conditions h3{
+  font-weight: bold;
+}
+/* terms_and_Conditions  end */
+/* services_policy */
+.services_policy p{
+
+font-size: 17px;
+color: #0a0a0abd;
+}
+/* services_policy end  */
+
+ /*faq start */
+ .section_padding_130 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.faq_area {
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5ff;
+}
+
+.faq-accordian {
+  position: relative;
+  z-index: 1;
+}
+.faq-accordian .card {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+.faq-accordian .card:last-child {
+  margin-bottom: 0;
+}
+.faq-accordian .card .card-header {
+  background-color: #ffffff;
+  padding: 0;
+  border-bottom-color: #ebebeb;
+}
+.faq-accordian .card .card-header h6 {
+  cursor: pointer;
+  padding: 1.75rem 2rem;
+  color: #3f43fd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.faq-accordian .card .card-header h6 span {
+  font-size: 1.5rem;
+}
+.faq-accordian .card .card-header h6.collapsed {
+  color: #070a57;
+}
+.faq-accordian .card .card-header h6.collapsed span {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.faq-accordian .card .card-body {
+  padding: 1.75rem 2rem;
+}
+.faq-accordian .card .card-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .support-button p {
+      font-size: 14px;
+  }
+}
+
+.support-button i {
+  color: #3f43fd;
+  font-size: 1.25rem;
+}
+@media only screen and (max-width: 575px) {
+  .support-button i {
+      font-size: 1rem;
+  }
+}
+
+.support-button a {
+  text-transform: capitalize;
+  color: #2ecc71;
+}
+@media only screen and (max-width: 575px) {
+  .support-button a {
+      font-size: 13px;
+  }
+}
+.gray_box{
+background-color: #f5f5ff;
+}
+.faq_area {
+direction: ltr;
+}
+.faq-accordian .card .card-body p{
+  text-align: left;
+}
+.faq-accordian .card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+/* end faq */
 .hero .content p{
   color: white;
   font-size: 17px;

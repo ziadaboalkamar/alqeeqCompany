@@ -714,7 +714,8 @@ textarea {
   width: 100%;
   margin-bottom: 30px;
   border-radius: 0;
-  padding-left: 40px; }
+  padding-left: 40px; 
+text-align: left;}
 
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
@@ -3302,7 +3303,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   height: 60px;
   background-color: var(--section-bg-1);
   font-weight: 600;
-  font-size: 14px; }
+  font-size: 14px;
+text-align: left; }
 
 .ltn__search-widget input[type="text"]::-webkit-input-placeholder {
   color: var(--ltn__primary-color);
@@ -9837,7 +9839,8 @@ blockquote {
   .ltn__comment-reply-area form input[type="password"],
   .ltn__comment-reply-area form input[type="submit"],
   .ltn__comment-reply-area form textarea {
-    border-color: var(--white-5); }
+    border-color: var(--white-5); 
+  text-align: left;}
 
 .ltn__comment-inner .product-ratting ul {
   padding: 0;

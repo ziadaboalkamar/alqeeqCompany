@@ -3095,7 +3095,7 @@
   /* end about page */
   /* sub category */
   .sub_services{
-    overflow: auto;
+    overflow: hidden;
   }
   .sub_services .list_of_sub_category{
     list-style: none;

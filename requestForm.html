@@ -792,7 +792,7 @@ itself.
               }
           }
       })
-          </script>
+          </script>-->
           <script>
               $('select').select2({
   createTag: function (params) {
@@ -809,24 +809,24 @@ itself.
     }
   }
 });
-$('.select2').on('change', function() {
-      var data = $(this).find('option:selected');
-      var fancyPantsArray = [];
-      data.each(function() {
-      fancyPantsArray.push($(this).val());
-    });
-    console.log(fancyPantsArray);
+// $('.select2').on('change', function() {
+//       var data = $(this).find('option:selected');
+//       var fancyPantsArray = [];
+//       data.each(function() {
+//       fancyPantsArray.push($(this).val());
+//     });
+//     console.log(fancyPantsArray);
 
 
-    var list = "<li>" + fancyPantsArray.join("<li></li>") + "</li>";
-document.getElementById("list").innerHTML = list;
+//     var list = "<li>" + fancyPantsArray.join("<li></li>") + "</li>";
+// document.getElementById("list").innerHTML = list;
  
-// <i onclick='myFunction()' class='fa-solid fa-xmark' id='cross_mark'></i> <input type='hidden' value='aa' name='aa'>
-    });
+// // <i onclick='myFunction()' class='fa-solid fa-xmark' id='cross_mark'></i> <input type='hidden' value='aa' name='aa'>
+//     });
     
   
           </script>
-          <script>
+          <!-- <script>
             function myFunction() {
   const element = document.getElementById("cross_mark");
   element.parentElement.remove();

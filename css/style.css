@@ -2954,6 +2954,10 @@ owl-prev:focus{
 }
 .footer .copy_right span a,.footer .copy_right h6{
   color: #636363;}
+  .footer .copy_right span {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 /* end footer */
 /* portfolio */
 .call_to_action  .call_to_action_buttom{
@@ -3115,6 +3119,17 @@ color: #0172B4;
 margin-right: 5px;
 margin-left: 5px;
 border-radius: 9px;
+ }
+ .service_request .services_selected ul li span{
+  border-right: 1px solid #0177b8;
+  padding-right: 4px;
+  color: #0178b8;
+  font-size: 13px;
+ }
+ .service_request .services_selected ul li i{
+  padding-left: 4px;
+  color: #0178b8;
+  cursor: pointer;
  }
  .service_request .service_request_form label{
   color: #0172B4;
@@ -3476,4 +3491,7 @@ margin-bottom: 15px;
 .s130 .search_box{
   JUSTIFY-CONTENT: center;
   text-align: -webkit-center;}
-  
+  .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    left: auto !important;
+    right: 2%;
+  }

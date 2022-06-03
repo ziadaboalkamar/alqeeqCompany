@@ -502,8 +502,8 @@
                           <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputEmail4">Services</label>
-                              <select class="form-control" multiple="multiple">
-                                <option">orange</option>
+                              <select class="form-control select2" name="states[]" multiple="multiple">
+                                <option>orange</option>
                                 <option>white</option>
                                 <option>purple</option>
                               </select>
@@ -511,7 +511,7 @@
                             
                             <div class="form-group col-md-6">
                               <label for="inputEmail4">Sub Category</label>
-                              <select class="form-control" multiple="multiple">
+                              <select class="form-control select2" name="states[]" multiple="multiple">
                                 <option>orange</option>
                                 <option>white</option>
                                 <option>purple</option>
@@ -534,19 +534,29 @@
 
                                 </div>      
                                             
-                                <div class="form-group col-md-12">
+                                <!-- <div class="form-group col-md-12">
+                                  <input type="hidden" id="test"> 
+
                                   <label for="inputZip">Selected Services</label>
                                   <div class="services_selected gray_body pt-3">
                                       <div class="container">
-                                          <ul>
-                                              <li>Mobile Design</li>
-                                              <li>Mobile Design</li>
+                                          <ul id="list">
+                                              <li id="select_list"><span> Mobile Design</span>
+                                                <i  onclick="myFunction()" class="fa-solid  fa-xmark" id="cross_mark"></i>
+                                                <input type="hidden" value="aa" name="aa">
+
+                                              </li>
+                                              <li><span> Mobile Design</span>
+                                                <i onclick="myFunction()" class="fa-solid fa-xmark" id="cross_mark"></i>
+                                                <input type="hidden" value="aa" name="aa">
+
+                                              </li>
 
                                           </ul>
                                       </div>
                                   </div>
 
-                              </div>                   
+                              </div>                    -->
                                  </div>
 
                                  <div class="form-group">
@@ -723,7 +733,7 @@ itself.
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <script>
+    <!-- <script>
       
             
       $('.client_what_are_saying_carousal').owlCarousel({
@@ -799,6 +809,29 @@ itself.
     }
   }
 });
+$('.select2').on('change', function() {
+      var data = $(this).find('option:selected');
+      var fancyPantsArray = [];
+      data.each(function() {
+      fancyPantsArray.push($(this).val());
+    });
+    console.log(fancyPantsArray);
+
+
+    var list = "<li>" + fancyPantsArray.join("<li></li>") + "</li>";
+document.getElementById("list").innerHTML = list;
+ 
+// <i onclick='myFunction()' class='fa-solid fa-xmark' id='cross_mark'></i> <input type='hidden' value='aa' name='aa'>
+    });
+    
+  
           </script>
+          <script>
+            function myFunction() {
+  const element = document.getElementById("cross_mark");
+  element.parentElement.remove();
+
+}
+          </script> -->
   </body>
 </html>

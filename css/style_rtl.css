@@ -2979,6 +2979,10 @@
     list-style: none;
     padding-right: 0px;
   }
+  .footer .copy_right span {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
   .about_list li{
     font-size: 18px;
     padding-bottom: 10px;
@@ -3558,3 +3562,7 @@
   JUSTIFY-CONTENT: center;
   text-align: -webkit-center;}
   
+  .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    left: auto !important;
+    right: 2%;
+  }

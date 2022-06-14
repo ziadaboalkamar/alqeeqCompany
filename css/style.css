@@ -138,7 +138,14 @@ a {
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: center;
+  background-color: #008cc7;
+  border-bottom-right-radius: 200px
  }
+ .hero.sub_hero img{
+  position: relative;
+  top: 20%;
+  
+}
 .site-navbar-wrap {
   position: relative;
   z-index: 99;
@@ -3322,9 +3329,11 @@ margin-bottom: 15px;
   background-image: unset !important ;
   background-color: #0185c3;
 }
-.hero.sub_hero{
-  background-image:url(../images/UI\ 14-03.png ) !important ;
-  background-color: #0185c3;
+.hero.sub_hero img{
+  width: 102%;
+  position: relative;
+  top: 128%;
+  
 }
 .sub_services .nav.nav-tabs{
   display: inline-block;
